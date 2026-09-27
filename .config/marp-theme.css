@@ -1,4 +1,10 @@
-/* @theme auto */
+/*
+ * @theme auto
+ * @auto-scaling fittingHeader,math
+ *
+ * Code blocks are not auto-scaled by Marp: the fit script in marprc.mjs
+ * shrinks the whole slide instead, so code and text stay proportional.
+ */
 
 /* Marp's default theme, following the system light/dark preference */
 @import 'default';
