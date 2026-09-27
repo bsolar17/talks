@@ -40,7 +40,7 @@ const isDark = (rgb) => rgb.match(/\d+/g).slice(0, 3).reduce((a, b) => a + +b, 0
     const url = 'file://' + deck
     const problems = []
 
-    // Overflow: how far (in slide pixels) content extends below the slide
+    // Overflow: how much (in slide pixels) the content is taller than the slide's inner area
     await page.goto(url, { waitUntil: 'load' })
     const count = await page.evaluate(() => document.querySelectorAll('section').length)
     const overflowing = []
@@ -48,10 +48,13 @@ const isDark = (rgb) => rgb.match(/\d+/g).slice(0, 3).reduce((a, b) => a + +b, 0
       await page.goto(`${url}#${i}`, { waitUntil: 'load' })
       const over = await page.evaluate((i) => {
         const s = document.querySelectorAll('section')[i - 1]
-        const box = s.getBoundingClientRect()
-        const scale = box.height / s.offsetHeight
-        const bottom = Math.max(...[...s.querySelectorAll('*')].map((e) => e.getBoundingClientRect().bottom))
-        return Math.round((bottom - box.bottom) / scale)
+        const style = getComputedStyle(s)
+        const room = s.clientHeight - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom)
+        const scale = s.getBoundingClientRect().height / s.offsetHeight
+        const first = s.firstElementChild, last = s.lastElementChild
+        if (!first) return 0
+        const used = (last.getBoundingClientRect().bottom - first.getBoundingClientRect().top) / scale
+        return Math.round(used - room)
       }, i)
       if (over > 0) overflowing.push(`${i} (+${over}px)`)
     }

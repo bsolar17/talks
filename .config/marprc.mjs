@@ -1,4 +1,6 @@
-// Light/dark switch injected into every generated deck.
+// Extras injected into every generated deck.
+
+// Light/dark switch.
 // Starts from the system preference; press "t" or use the half-circle button to toggle.
 // The choice is remembered and synced across windows (e.g. presenter view).
 const schemeToggle = `
@@ -49,14 +51,41 @@ const schemeToggle = `
 </script>
 `
 
+// Shrinks the text of slides whose content doesn't fit, until it does:
+// too tall for the slide, or code blocks too wide.
+// Runs before Marp's viewer script, while all slides are still laid out.
+const fitSlides = `
+<script>
+for (const slide of document.querySelectorAll('section')) {
+  const style = getComputedStyle(slide)
+  const base = parseFloat(style.fontSize)
+  const room = slide.clientHeight - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom)
+  // Height of the content, in slide pixels (the slide itself is scaled to the window)
+  const used = () => {
+    const first = slide.firstElementChild, last = slide.lastElementChild
+    if (!first) return 0
+    const scale = slide.getBoundingClientRect().height / slide.offsetHeight
+    return (last.getBoundingClientRect().bottom - first.getBoundingClientRect().top) / scale
+  }
+  const codeTooWide = () => [...slide.querySelectorAll('pre')].some((pre) => pre.scrollWidth > pre.clientWidth)
+  const overflows = () => used() > room || codeTooWide()
+  for (let scale = 0.98; overflows() && scale >= 0.5; scale -= 0.02) {
+    slide.style.fontSize = base * scale + 'px'
+  }
+}
+</script>
+`
+
 export default {
   inputDir: '..',
   theme: 'marp-theme.css',
   engine: ({ marp }) => {
+    // Newlines inside a paragraph are just source wrapping, not line breaks
+    marp.markdown.set({ breaks: false })
     const render = marp.render.bind(marp)
     marp.render = (...args) => {
       const result = render(...args)
-      return { ...result, html: result.html + schemeToggle }
+      return { ...result, html: result.html + fitSlides + schemeToggle }
     }
     return marp
   },
