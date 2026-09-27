@@ -1,3 +1,8 @@
+---
+author: Christian Apolloni
+date: 2026-09-26
+---
+
 # Test Driven Development (TDD)
 
 **How to use it effectively—what it really is, why it matters, and practical advice you can use today.**

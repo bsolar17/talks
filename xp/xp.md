@@ -1,3 +1,8 @@
+---
+author: Christian Apolloni
+date: 2026-09-26
+---
+
 # Extreme Programming (XP)
 
 **What happens when you take good practices and turn the dial all the way up?**
