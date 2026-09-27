@@ -1,3 +1,8 @@
+---
+author: Christian Apolloni
+date: 2026-09-26
+---
+
 # Extreme Programming (XP)
 
 **Embrace Change**
