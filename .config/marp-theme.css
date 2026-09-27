@@ -1,0 +1,8 @@
+/* @theme auto */
+
+/* Marp's default theme, following the system light/dark preference */
+@import 'default';
+
+section {
+  color-scheme: light dark;
+}
