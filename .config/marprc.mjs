@@ -78,7 +78,8 @@ for (const slide of document.querySelectorAll('section')) {
 
 export default {
   inputDir: '..',
-  theme: 'marp-theme.css',
+  themeSet: 'marp-theme.css',
+  theme: 'auto', // the @theme name declared in marp-theme.css
   engine: ({ marp }) => {
     // Newlines inside a paragraph are just source wrapping, not line breaks
     marp.markdown.set({ breaks: false })
