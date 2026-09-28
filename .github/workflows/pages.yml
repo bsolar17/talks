@@ -1,0 +1,54 @@
+# Builds the decks with Marp and publishes them to GitHub Pages.
+# The generated HTML only lives in the Pages artifact, never in the repo.
+name: Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+      - name: Build decks
+        run: npx --yes @marp-team/marp-cli@4.5.1 -c .config/marprc.mjs --output _site
+      - name: Build index
+        run: |
+          {
+            echo '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width">'
+            echo '<title>Talks</title><style>body{font-family:system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem}</style>'
+            echo '<h1>Talks</h1><ul>'
+            for deck in */*.md; do
+              title=$(grep -m1 '^# ' "$deck" | sed 's/^# //')
+              echo "<li><a href=\"${deck%.md}.html\">${title:-$deck}</a></li>"
+            done
+            echo '</ul>'
+          } > _site/index.html
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
