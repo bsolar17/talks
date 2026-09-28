@@ -25,7 +25,10 @@ jobs:
         with:
           node-version: lts/*
       - name: Build decks
-        run: npx --yes @marp-team/marp-cli@4.5.1 -c .config/marprc.mjs --output _site
+        run: |
+          npx --yes @marp-team/marp-cli@4.5.1 '*/*.md'
+          mkdir _site
+          cp --parents */*.html _site/
       - name: Build index
         run: |
           {
