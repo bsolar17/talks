@@ -77,7 +77,6 @@ for (const slide of document.querySelectorAll('section')) {
 `
 
 export default {
-  inputDir: '..',
   themeSet: 'marp-theme.css',
   theme: 'auto', // the @theme name declared in marp-theme.css
   engine: ({ marp }) => {
