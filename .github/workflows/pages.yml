@@ -28,7 +28,7 @@ jobs:
         run: |
           npx --yes @marp-team/marp-cli@4.5.1 '*/*.md'
           mkdir _site
-          cp --parents */*.html _site/
+          find */ -path _site/ -prune -o -type f ! -name '*.md' -exec cp --parents {} _site/ \;
       - name: Build index
         run: |
           {
