@@ -5,8 +5,16 @@
 // The choice is remembered and synced across windows (e.g. presenter view).
 const schemeToggle = `
 <style>
-  html[data-scheme="light"] section { color-scheme: light !important; }
-  html[data-scheme="dark"] section { color-scheme: dark !important; }
+  html[data-scheme="light"] :is(section, body) { color-scheme: light !important; }
+  html[data-scheme="dark"] :is(section, body) { color-scheme: dark !important; }
+  /* Fill the space around the slide (window not 16:9) with the slide background
+     (Catppuccin base, see marp-theme.css) instead of black */
+  @media screen {
+    body[data-bespoke-view=""] {
+      color-scheme: light dark;
+      background: light-dark(#eff1f5, #1e1e2e);
+    }
+  }
   /* Same look as Marp's built-in control buttons: 32px box, white stroked SVG */
   button.scheme-toggle {
     width: 32px;
