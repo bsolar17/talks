@@ -9,6 +9,65 @@
 /* Marp's default theme, following the system light/dark preference */
 @import 'default';
 
+/*
+ * Catppuccin colors: Latte in light mode, Mocha in dark mode.
+ * https://catppuccin.com/palette
+ * Latte's accents used for text are mixed 30% with its text color, to tone
+ * them down to Mocha's softness.
+ */
 section {
   color-scheme: light dark;
+
+  --base: light-dark(#eff1f5, #1e1e2e);
+  --mantle: light-dark(#e6e9ef, #181825);
+  --surface0: light-dark(#ccd0da, #313244);
+  --surface1: light-dark(#bcc0cc, #45475a);
+  --text: light-dark(#4c4f69, #cdd6f4);
+  --subtext0: light-dark(#6c6f85, #a6adc8);
+  --mauve: light-dark(#7640c7, #cba6f7);
+  --peach: light-dark(#c95e27, #fab387);
+  --teal: light-dark(#277e8b, #94e2d5);
+  --blue: light-dark(#1e66f5, #89b4fa);
+  --lavender: light-dark(#6776d1, #b4befe);
+
+  /* The default theme's own variables */
+  --bgColor-default: var(--base);
+  --bgColor-muted: var(--mantle);
+  --bgColor-neutral-muted: var(--surface0);
+  --fgColor-default: var(--text);
+  --fgColor-muted: var(--subtext0);
+  --fgColor-accent: var(--blue);
+  --borderColor-default: var(--surface1);
+  --borderColor-muted: var(--surface0);
+  --h1-color: var(--mauve);
+  --heading-strong-color: var(--peach);
+  --paginate-color: var(--subtext0);
+}
+
+section :is(h2, h3) {
+  color: var(--lavender);
+}
+
+section strong {
+  color: var(--peach);
+}
+
+section em {
+  color: var(--teal);
+}
+
+section blockquote {
+  border-left-color: var(--mauve);
+}
+
+section table tr {
+  background-color: var(--base);
+}
+
+section table tr:nth-child(2n) {
+  background-color: var(--mantle);
+}
+
+section table th {
+  background-color: var(--surface0);
 }
