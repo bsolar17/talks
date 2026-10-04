@@ -85,6 +85,8 @@ for (const slide of document.querySelectorAll('section')) {
 `
 
 export default {
+  // Without it, the language comes from the build machine's locale ("C" in CI)
+  lang: 'en',
   themeSet: 'marp-theme.css',
   theme: 'auto', // the @theme name declared in marp-theme.css
   engine: ({ marp }) => {
