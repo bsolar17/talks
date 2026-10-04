@@ -29,10 +29,13 @@ jobs:
           npx --yes @marp-team/marp-cli@4.5.1 '*/*.md'
           mkdir _site
           find */ -path _site/ -prune -o -type f ! -name '*.md' -exec cp --parents {} _site/ \;
+          # Browsers only use an icon declared in <head>, which Marp doesn't let us extend
+          cp .config/favicon.svg _site/
+          sed -i 's|<head>|<head><link rel="icon" href="../favicon.svg">|' _site/*/*.html
       - name: Build index
         run: |
           {
-            echo '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width">'
+            echo '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="favicon.svg">'
             echo '<title>Talks</title><style>body{font-family:system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem}</style>'
             echo '<h1>Talks</h1><ul>'
             for deck in */*.md; do
