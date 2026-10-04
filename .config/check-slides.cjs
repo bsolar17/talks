@@ -2,6 +2,7 @@
 // Checks the generated decks in headless Chrome:
 // - reports slides whose content overflows the slide
 // - verifies the light/dark toggle (system preference, "t" key, button)
+// - verifies click to advance (and that selecting text doesn't advance)
 //
 // Usage: node .config/check-slides.cjs [deck.html ...]   (default: every */*.html)
 // Set CHROME_PATH to use another Chrome/Chromium binary.
@@ -73,6 +74,23 @@ const isDark = (rgb) => rgb.match(/\d+/g).slice(0, 3).reduce((a, b) => a + +b, 0
       if (isDark(await background(page)) !== start) problems.push('toggle button does not toggle')
     }
     await page.evaluate(() => localStorage.clear())
+
+    // Click to advance, but not when selecting text
+    const hash = () => page.evaluate(() => location.hash)
+    const settle = () => new Promise((r) => setTimeout(r, 100))
+    await page.goto(`${url}#1`, { waitUntil: 'load' })
+    await page.mouse.click(640, 360)
+    await settle()
+    if (await hash() !== '#2') problems.push('click does not advance')
+    await page.mouse.move(400, 300)
+    await page.mouse.down()
+    await page.mouse.move(800, 400, { steps: 5 })
+    await page.mouse.up()
+    await settle()
+    if (await hash() !== '#2') problems.push('dragging a selection advances')
+    await page.mouse.click(640, 360)
+    await settle()
+    if (await hash() !== '#2') problems.push('clicking away a selection advances')
 
     if (errors.length) problems.push(`page errors: ${errors.join('; ')}`)
     console.log(`${path.relative(root, deck)} (${count} slides): ${problems.length ? '\n  - ' + problems.join('\n  - ') : 'ok'}`)

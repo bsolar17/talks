@@ -84,6 +84,31 @@ for (const slide of document.querySelectorAll('section')) {
 </script>
 `
 
+// Click anywhere on the slide to advance (also reveals the next fragment).
+// Not when the click is selecting text (drag, or clearing a selection), lands on
+// a link/button/form control, or happens in presenter or overview view.
+const clickToAdvance = `
+<script>
+(() => {
+  const interactive = 'a, button, input, textarea, select, summary, label, video, audio, iframe, [contenteditable], .bespoke-marp-osc'
+  let down = null
+  document.addEventListener('mousedown', (e) => {
+    down = { x: e.clientX, y: e.clientY, selecting: !getSelection().isCollapsed }
+  })
+  document.addEventListener('click', (e) => {
+    const start = down
+    down = null
+    if (document.body.dataset.bespokeView !== '') return
+    if (e.button !== 0 || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return
+    if (!start || start.selecting || !getSelection().isCollapsed) return
+    if (Math.hypot(e.clientX - start.x, e.clientY - start.y) > 5) return
+    if (e.target.closest(interactive)) return
+    document.querySelector('[data-bespoke-marp-osc="next"]')?.click()
+  })
+})()
+</script>
+`
+
 export default {
   // Without it, the language comes from the build machine's locale ("C" in CI)
   lang: 'en',
@@ -95,7 +120,7 @@ export default {
     const render = marp.render.bind(marp)
     marp.render = (...args) => {
       const result = render(...args)
-      return { ...result, html: result.html + fitSlides + schemeToggle }
+      return { ...result, html: result.html + fitSlides + schemeToggle + clickToAdvance }
     }
     return marp
   },
