@@ -2,6 +2,8 @@
 
 Slide decks written in Markdown and built with [Marp](https://marp.app/).
 Each talk lives in its own directory.
+A translation sits next to the English deck, named after it with the language
+code appended, e.g. `xp/xp.de.md`.
 
 Published at <https://bsolar17.github.io/talks/>.
 

@@ -38,11 +38,24 @@ jobs:
             echo '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="favicon.svg">'
             echo '<title>Talks</title><style>body{font-family:system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem}</style>'
             echo '<h1>Talks</h1><ul>'
+            # talk.md is the English deck, talk.xx.md its translations
             for deck in */*.md; do
+              case "$deck" in *.[a-z][a-z].md) continue ;; esac
+              base=${deck%.md}
               title=$(grep -m1 '^# ' "$deck" | sed 's/^# //')
-              echo "<li><a href=\"${deck%.md}.html\">${title:-$deck}</a></li>"
+              langs=
+              for translation in "$base".[a-z][a-z].md; do
+                [ -e "$translation" ] || continue
+                lang=${translation%.md}
+                lang=${lang##*.}
+                langs="$langs, <a href=\"${translation%.md}.html\" hreflang=\"$lang\">$(echo "$lang" | tr a-z A-Z)</a>"
+              done
+              [ -n "$langs" ] && langs=" [<a href=\"$base.html\" hreflang=\"en\">EN</a>$langs]"
+              echo "<li><a href=\"$base.html\">${title:-$deck}</a>$langs</li>"
             done
             echo '</ul>'
+            # The title opens the translation matching the browser's languages, if any
+            echo "<script>for (const li of document.querySelectorAll('li')) { const links = [...li.querySelectorAll('[hreflang]')]; const match = navigator.languages.map((l) => links.find((a) => a.hreflang === l.slice(0, 2))).find(Boolean); if (match) li.firstElementChild.href = match.href }</script>"
           } > _site/index.html
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
