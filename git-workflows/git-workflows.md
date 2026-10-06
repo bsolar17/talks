@@ -185,8 +185,9 @@ void refund(Account account, long amount) {
 
 ---
 
-## Making sure someone tests what lands on `master`
+## Ensuring `master` never breaks
 
+- Goal: `master` always builds and passes the tests, so test what lands on it
 - Require branches to be up to date before merging
 - CI on the merge result, not only on the branch
 - A **merge queue**: tests each change on top of the latest `master`
