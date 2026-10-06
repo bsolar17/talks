@@ -17,6 +17,8 @@ style: |
 
 # git help
 
+**A short overview of git's main concepts**
+
 ```text
 usage: git [--version] [--help] [-C <path>] [-c name=value]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
