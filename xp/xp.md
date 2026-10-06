@@ -414,6 +414,31 @@ Often, what breaks or hurts shows you exactly what has to improve next!
 
 ---
 
+## References
+
+- Kent Beck with Cynthia Andres, _Extreme Programming Explained: Embrace
+  Change_, 2nd edition (2004)
+- Don Wells, XP values: <http://www.extremeprogramming.org/values.html>
+- Manifesto for Agile Software Development: <https://agilemanifesto.org/>
+- The Scrum Guide: <https://scrumguides.org/scrum-guide.html>
+- Martin Fowler, _Flaccid Scrum_ (2009):
+  <https://martinfowler.com/bliki/FlaccidScrum.html>
+- Martin Fowler's bliki: _ParallelChange_, _BranchByAbstraction_,
+  _StranglerFigApplication_: <https://martinfowler.com/bliki/>
+- Chrysler C3:
+  <https://en.wikipedia.org/wiki/Chrysler_Comprehensive_Compensation_System>
+- Daily stand-up: <https://agilealliance.org/glossary/daily-meeting/>
+- Jeff Sutherland, _Origins of Scrum_ (2007):
+  <http://jeffsutherland.com/scrum/2007/07/origins-of-scrum.html>
+- XP@Scrum, XBreed:
+  <https://www.computerworld.com/article/1363906/xp-scrum-join-forces.html>
+- Kent Beck, _Tidy First? Example_ ("make the change easy"):
+  <https://tidyfirst.substack.com/p/tidy-first-example>
+- "Great habits", from Fowler's _Refactoring_ (1999):
+  <https://en.wikiquote.org/wiki/Kent_Beck>
+
+---
+
 **Thank you!**
 
 > Questions? Remarks? Discussion welcome!

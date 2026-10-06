@@ -249,3 +249,20 @@ In `.gitconfig`:
 - Repeat recursively…
 - **If the commit SHA-1 matches, the commit refers to exactly the same complete
   commit chain**
+
+---
+
+## References
+
+- Scott Chacon, Ben Straub, _Pro Git_: <https://git-scm.com/book>; diagrams
+  from the book, CC BY-NC-SA 3.0
+- Git documentation: <https://git-scm.com/doc>
+- Git logo by Jason Long, CC BY 3.0: <https://git-scm.com/downloads/logos>
+- Merkle tree: <https://en.wikipedia.org/wiki/Merkle_tree>
+- Practice: <https://learngitbranching.js.org/>
+
+---
+
+**Thank you!**
+
+> Questions? Remarks? Discussion welcome!

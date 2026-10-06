@@ -187,14 +187,15 @@ is not.**
 
 ---
 
-## Want to Go Deeper? (Resources)
+## References
 
 - Kent Beck, _Test-Driven Development: By Example_
 - Martin Fowler,
   [Test-Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html)
+- Extreme Programming: <https://en.wikipedia.org/wiki/Extreme_programming>
 
 ---
 
-**Thank you!** 
+**Thank you!**
 
-> Questions? Discussion welcome.
+> Questions? Remarks? Discussion welcome!

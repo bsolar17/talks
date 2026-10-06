@@ -433,6 +433,31 @@ werden muss!
 
 ---
 
+## Referenzen
+
+- Kent Beck mit Cynthia Andres, _Extreme Programming Explained: Embrace
+  Change_, 2. Auflage (2004)
+- Don Wells, XP-Werte: <http://www.extremeprogramming.org/values.html>
+- Manifest für Agile Softwareentwicklung: <https://agilemanifesto.org/>
+- The Scrum Guide: <https://scrumguides.org/scrum-guide.html>
+- Martin Fowler, _Flaccid Scrum_ (2009):
+  <https://martinfowler.com/bliki/FlaccidScrum.html>
+- Martin Fowlers Bliki: _ParallelChange_, _BranchByAbstraction_,
+  _StranglerFigApplication_: <https://martinfowler.com/bliki/>
+- Chrysler C3:
+  <https://en.wikipedia.org/wiki/Chrysler_Comprehensive_Compensation_System>
+- Daily Stand-up: <https://agilealliance.org/glossary/daily-meeting/>
+- Jeff Sutherland, _Origins of Scrum_ (2007):
+  <http://jeffsutherland.com/scrum/2007/07/origins-of-scrum.html>
+- XP@Scrum, XBreed:
+  <https://www.computerworld.com/article/1363906/xp-scrum-join-forces.html>
+- Kent Beck, _Tidy First? Example_ („make the change easy“):
+  <https://tidyfirst.substack.com/p/tidy-first-example>
+- „Great habits“, aus Fowlers _Refactoring_ (1999):
+  <https://en.wikiquote.org/wiki/Kent_Beck>
+
+---
+
 **Vielen Dank!**
 
 > Fragen? Anmerkungen? Diskussion erwünscht!
