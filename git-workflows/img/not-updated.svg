@@ -1,0 +1,26 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='-14 0 655 200' width='655' height='200' font-family='system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<defs><marker id='arrow' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0 L10 5 L0 10 z' fill='#8c8fa1'/></marker></defs>
+<path d='M40 104 L112 104' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M112 104 L184 104' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M184 104 L256 104' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M112 104 C148.0 104 148.0 168 184 168' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M184 168 L256 168' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<circle cx='40' cy='104' r='16' fill='#4c4f69' stroke='#fff' stroke-width='3'/>
+<text x='40' y='108.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>A</text>
+<circle cx='112' cy='104' r='16' fill='#4c4f69' stroke='#fff' stroke-width='3'/>
+<text x='112' y='108.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>B</text>
+<circle cx='184' cy='104' r='16' fill='#fe640b' stroke='#fff' stroke-width='3'/>
+<text x='184' y='108.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>C</text>
+<circle cx='256' cy='104' r='16' fill='#fe640b' stroke='#fff' stroke-width='3'/>
+<text x='256' y='108.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>D</text>
+<circle cx='184' cy='168' r='16' fill='#40a02b' stroke='#fff' stroke-width='3'/>
+<text x='184' y='172.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>X</text>
+<circle cx='256' cy='168' r='16' fill='#40a02b' stroke='#fff' stroke-width='3'/>
+<text x='256' y='172.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>Y</text>
+<rect x='280.0' y='93.0' width='114.8' height='22' rx='5' fill='#fff' stroke='#fe640b' stroke-width='2' stroke-dasharray='4 3'/>
+<text x='337.4' y='108.5' fill='#fe640b' font-size='13' font-weight='bold' text-anchor='middle'>origin/master</text>
+<rect x='280.0' y='157.0' width='69.2' height='22' rx='5' fill='#40a02b'/>
+<text x='314.6' y='172.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>feature</text>
+<text x='0' y='28.0' fill='#8c8fa1' font-size='14' text-anchor='start' font-weight='bold'>Pushing feature to master: rejected, origin/master is not an ancestor of feature</text>
+<text x='368' y='173' fill='#d20f39' font-size='14' text-anchor='start' font-weight='bold'>✗ rejected</text>
+</svg>

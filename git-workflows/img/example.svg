@@ -1,0 +1,26 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='8 8 543 128' width='543' height='128' font-family='system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<defs><marker id='arrow' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0 L10 5 L0 10 z' fill='#8c8fa1'/></marker></defs>
+<path d='M40 40 L112 40' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M112 40 L184 40' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M184 40 L256 40' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M112 40 C148.0 40 148.0 104 184 104' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M184 104 L256 104' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<circle cx='40' cy='40' r='16' fill='#4c4f69' stroke='#fff' stroke-width='3'/>
+<text x='40' y='44.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>A</text>
+<circle cx='112' cy='40' r='16' fill='#4c4f69' stroke='#fff' stroke-width='3'/>
+<text x='112' y='44.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>B</text>
+<circle cx='184' cy='40' r='16' fill='#fe640b' stroke='#fff' stroke-width='3'/>
+<text x='184' y='44.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>C</text>
+<circle cx='256' cy='40' r='16' fill='#fe640b' stroke='#fff' stroke-width='3'/>
+<text x='256' y='44.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>D</text>
+<circle cx='184' cy='104' r='16' fill='#40a02b' stroke='#fff' stroke-width='3'/>
+<text x='184' y='108.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>X</text>
+<circle cx='256' cy='104' r='16' fill='#40a02b' stroke='#fff' stroke-width='3'/>
+<text x='256' y='108.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>Y</text>
+<rect x='280.0' y='29.0' width='114.8' height='22' rx='5' fill='#fff' stroke='#fe640b' stroke-width='2' stroke-dasharray='4 3'/>
+<text x='337.4' y='44.5' fill='#fe640b' font-size='13' font-weight='bold' text-anchor='middle'>origin/master</text>
+<rect x='280.0' y='93.0' width='69.2' height='22' rx='5' fill='#40a02b'/>
+<text x='314.6' y='108.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>feature</text>
+<text x='408' y='45' fill='#fe640b' font-size='13' text-anchor='start' font-weight='normal' font-style='italic'>Alice pushed C, D</text>
+<text x='362' y='109' fill='#40a02b' font-size='13' text-anchor='start' font-weight='normal' font-style='italic'>I committed X, Y locally</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='8 17 647 151' width='647' height='151' font-family='system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<defs><marker id='arrow' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0 L10 5 L0 10 z' fill='#8c8fa1'/></marker></defs>
+<path d='M40 72.0 L112 72.0' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M112 72.0 L184 72.0' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M184 72.0 L256 72.0' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M112 72.0 C148.0 72.0 148.0 136.0 184 136.0' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M184 136.0 L256 136.0' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M256 72.0 L328 72.0' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<path d='M256 136.0 C292.0 136.0 292.0 72.0 328 72.0' fill='none' stroke='#9ca0b0' stroke-width='3'/>
+<circle cx='40' cy='72.0' r='16' fill='#4c4f69' stroke='#fff' stroke-width='3'/>
+<text x='40' y='76.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>A</text>
+<circle cx='112' cy='72.0' r='16' fill='#4c4f69' stroke='#fff' stroke-width='3'/>
+<text x='112' y='76.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>B</text>
+<circle cx='184' cy='72.0' r='16' fill='#fe640b' stroke='#fff' stroke-width='3'/>
+<text x='184' y='76.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>C</text>
+<circle cx='256' cy='72.0' r='16' fill='#fe640b' stroke='#fff' stroke-width='3'/>
+<text x='256' y='76.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>D</text>
+<circle cx='184' cy='136.0' r='16' fill='#40a02b' stroke='#fff' stroke-width='3'/>
+<text x='184' y='140.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>X</text>
+<circle cx='256' cy='136.0' r='16' fill='#40a02b' stroke='#fff' stroke-width='3'/>
+<text x='256' y='140.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>Y</text>
+<circle cx='328' cy='72.0' r='16' fill='#8839ef' stroke='#fff' stroke-width='3'/>
+<text x='328' y='76.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>M</text>
+<rect x='352.0' y='61.0' width='61.6' height='22' rx='5' fill='#1e66f5'/>
+<text x='382.8' y='76.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>master</text>
+<rect x='280.0' y='125.0' width='69.2' height='22' rx='5' fill='#40a02b'/>
+<text x='314.6' y='140.5' fill='#fff' font-size='13' font-weight='bold' text-anchor='middle'>feature</text>
+<text x='328' y='44.0' fill='#8c8fa1' font-size='13' text-anchor='middle' font-weight='normal' font-style='italic'>merge commit created by GitHub</text>
+<text x='364' y='141.0' fill='#d20f39' font-size='13' text-anchor='start' font-weight='normal' font-style='italic'>checks ran on a test merge of Y with C</text>
+</svg>

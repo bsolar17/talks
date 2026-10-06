@@ -1,0 +1,23 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 330' width='760' height='330' font-family='system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<defs>
+<marker id='arrow-down' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0 L10 5 L0 10 z' fill='#fe640b'/></marker>
+<marker id='arrow-up' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0 L10 5 L0 10 z' fill='#40a02b'/></marker>
+</defs>
+<!-- Reference branch -->
+<rect x='200' y='10' width='360' height='80' rx='10' fill='#fff' stroke='#fe640b' stroke-width='3' stroke-dasharray='8 5'/>
+<text x='380' y='45' fill='#fe640b' font-size='20' font-weight='bold' text-anchor='middle'>origin/master</text>
+<text x='380' y='70' fill='#6c6f85' font-size='14' text-anchor='middle'>the reference, shared by everyone</text>
+<!-- Local work -->
+<rect x='200' y='240' width='360' height='80' rx='10' fill='#40a02b'/>
+<text x='380' y='275' fill='#fff' font-size='20' font-weight='bold' text-anchor='middle'>feature</text>
+<text x='380' y='300' fill='#fff' font-size='14' text-anchor='middle'>the branch with my work</text>
+<!-- 1. getting up to date -->
+<path d='M290 94 L290 234' stroke='#fe640b' stroke-width='4' fill='none' marker-end='url(#arrow-down)'/>
+<text x='275' y='150' fill='#fe640b' font-size='17' font-weight='bold' text-anchor='end'>1. Getting up to date</text>
+<text x='275' y='174' fill='#6c6f85' font-size='14' text-anchor='end'>fetch, then merge or rebase</text>
+<!-- 2. updating the remote -->
+<path d='M470 236 L470 96' stroke='#40a02b' stroke-width='4' fill='none' marker-end='url(#arrow-up)'/>
+<text x='485' y='150' fill='#40a02b' font-size='17' font-weight='bold'>2. Updating the remote</text>
+<text x='485' y='174' fill='#6c6f85' font-size='14'>push, or merge a PR: ff, no-ff,</text>
+<text x='485' y='194' fill='#6c6f85' font-size='14'>rebase, squash</text>
+</svg>
