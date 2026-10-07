@@ -54,7 +54,7 @@ style: |
 - Any branch that started from `master` and carries my work back to it
 - Even after the two have diverged
 - It can be:
-  - my local `master` itself, when everyone works on `master`
+  - my local `master` itself
   - a local topic branch, never pushed
   - a branch pushed for a pull request, or in a fork
   - a long-lived branch: `develop`, a team branch, …
@@ -89,7 +89,9 @@ Different workflows, same two questions, same mechanics.
 
 ---
 
-## `D` and `Y` touch the same lines: a git conflict
+## Git Conflict
+
+`D` and `Y` touch the same lines: a git conflict
 
 - **Merge** stops once, with both sides of `Invoice.java` marked
   - fix, `git add Invoice.java`, `git commit`
@@ -101,7 +103,9 @@ Different workflows, same two questions, same mechanics.
 
 ---
 
-## `C` and `X` don't touch the same lines: no git conflict
+## Semantic Conflict
+
+`C` and `X` don't touch the same lines: no git conflict
 
 ```java
 // Billing.java, after C: renamed, every existing caller updated
@@ -246,6 +250,16 @@ Rebase each feature, then merge it with `--no-ff`
 
 ---
 
+## GitHub: Update branch
+
+![h:310](img/gh-update-branch.svg)
+
+- **Update branch** (default): a catch-up merge, done by GitHub
+- **Update with rebase** (dropdown): rewrites `feature`; local copies need a reset
+- Either way, checks run again before merging
+
+---
+
 ## GitHub: normal merge
 
 ![](img/gh-merge.svg)
@@ -264,16 +278,6 @@ Rebase each feature, then merge it with `--no-ff`
 - Both done on the fly, even if `feature` is behind `master`
 - **Rebase and merge** always creates new commits, even when not needed
 - History: linear; with squash, one commit per pull request
-
----
-
-## GitHub: Update branch
-
-![h:310](img/gh-update-branch.svg)
-
-- **Update branch** (default): a catch-up merge, done by GitHub
-- **Update with rebase** (dropdown): rewrites `feature`; local copies need a reset
-- Either way, checks run again before merging
 
 ---
 
