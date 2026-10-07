@@ -151,7 +151,7 @@ _Based on Don Wells,
 
 ---
 
-## Principles (selection)
+## Principles (Selection)
 
 - **Humanity**: software is built by people for people; meet their needs
 - **Economics**: someone is paying for this; create ROI, deliver business value
@@ -170,7 +170,7 @@ _Based on Don Wells,
 
 ---
 
-## Practices (primary)
+## Practices (Primary)
 
 | Team & Environment    | Planning        | Programming            |
 | --------------------- | --------------- | ---------------------- |
@@ -202,7 +202,7 @@ correction
 
 ---
 
-## Synergy: The Whole Can Be Greater than The Sum of the Parts
+## Synergy: The Whole Can Be Greater than the Sum of the Parts
 
 ```text
        Automated Tests

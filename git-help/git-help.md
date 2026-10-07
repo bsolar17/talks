@@ -15,7 +15,7 @@ style: |
   }
 ---
 
-# git help
+# git Help
 
 **A short overview of git's main concepts**
 
@@ -45,11 +45,11 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
 
 ---
 
-# Basic concepts
+# Basic Concepts
 
 ---
 
-## The fundamental problem
+## The Fundamental Problem
 
 - I want to work on some files
 - I want to know what changed compared to some reference version
@@ -64,19 +64,19 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
 
 ---
 
-## You can think about deltas
+## You Can Think About Deltas
 
 ![](img/deltas.png)
 
 ---
 
-## You can think about snapshots
+## You Can Think About Snapshots
 
 ![](img/snapshots.png)
 
 ---
 
-## Learning how git thinks
+## Learning How git Thinks
 
 ![](img/data-model-4.png)
 
@@ -116,7 +116,7 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
 
 ---
 
-## Non-distributed VCS (i.e., not git)
+## Non-Distributed VCS (i.e., Not git)
 
 ![](img/centralized.png)
 
@@ -128,25 +128,25 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
 
 ---
 
-## Remote branches
+## Remote Branches
 
 ![](img/remote-branches-1.png)
 
 ---
 
-## You can work independently on your local branch
+## You Can Work Independently on Your Local Branch
 
 ![](img/remote-branches-2.png)
 
 ---
 
-## Eventually, you'll have to integrate…
+## Eventually, You'll Have to Integrate…
 
 ![](img/remote-branches-3.png)
 
 ---
 
-# Distributed workflows
+# Distributed Workflows
 
 ---
 
@@ -156,7 +156,7 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
 
 ---
 
-## Integration manager
+## Integration Manager
 
 ![](img/integration-manager.png)
 
@@ -168,11 +168,11 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
 
 ---
 
-# How to learn
+# How to Learn
 
 ---
 
-## Read the documentation
+## Read the Documentation
 
 - <https://git-scm.com/doc>
 - <https://git-scm.com/blog>
@@ -190,7 +190,7 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
 
 ---
 
-## Configure git to force you to think
+## Configure git to Force You to Think
 
 `git pull --ff-only`
 
@@ -203,29 +203,29 @@ In `.gitconfig`:
 
 ---
 
-## A visual tool can help to make sense of things
+## A Visual Tool Can Help to Make Sense of Things
 
 - <https://git-scm.com/downloads/guis>
 
 ---
 
-# Anatomy of a git commit
+# Anatomy of a git Commit
 
 ---
 
-## Commit chain
+## Commit Chain
 
 ![](img/commits-and-parents.png)
 
 ---
 
-## Commit and tree
+## Commit and Tree
 
 ![](img/commit-and-tree.png)
 
 ---
 
-## A commit SHA-1 is calculated from the following values
+## A Commit SHA-1 Is Calculated from the Following Values
 
 - Author name, email and timestamp
 - Committer name, email and timestamp
@@ -236,7 +236,7 @@ In `.gitconfig`:
 
 ---
 
-## This makes the whole structure consistency verifiable
+## This Makes the Whole Structure Consistency Verifiable
 
 - Git stores data in a specialized Merkle tree structure
   (<https://en.wikipedia.org/wiki/Merkle_tree>)

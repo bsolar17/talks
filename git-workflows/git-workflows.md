@@ -15,13 +15,13 @@ style: |
   }
 ---
 
-# git workflows
+# git Workflows
 
 **The lifecycle of a change**
 
 ---
 
-## Why talk about workflows?
+## Why Talk About Workflows?
 
 - git gives you the building blocks: branches, merge, rebase, …
 - git does **not** tell you how a team should use them
@@ -30,7 +30,7 @@ style: |
 
 ---
 
-## The example
+## The Example
 
 ![](img/example.svg)
 
@@ -43,13 +43,13 @@ style: |
 
 ---
 
-## Two questions every workflow answers
+## Two Questions Every Workflow Answers
 
 ![](img/two-directions.svg)
 
 ---
 
-## The feature branch
+## The Feature Branch
 
 - Any branch that started from `master` and carries my work back to it
 - Even after the two have diverged
@@ -63,13 +63,13 @@ Different workflows, same two questions, same mechanics.
 
 ---
 
-# 1. Getting up to date
+# 1. Getting Up to Date
 
 **Bringing new upstream commits into my feature branch**
 
 ---
 
-## Option 1: merge
+## Option 1: Merge
 
 ![](img/catch-up-merge.svg)
 
@@ -79,7 +79,7 @@ Different workflows, same two questions, same mechanics.
 
 ---
 
-## Option 2: rebase
+## Option 2: Rebase
 
 ![](img/rebase.svg)
 
@@ -132,7 +132,7 @@ void refund(Account account, long amount) {
 
 ---
 
-## If I don't get up to date: push
+## If I Don't Get Up to Date: Push
 
 ![](img/not-updated.svg)
 
@@ -143,7 +143,7 @@ void refund(Account account, long amount) {
 
 ---
 
-## If I merge first
+## If I Merge First
 
 ![h:310](img/merged-update.svg)
 
@@ -153,7 +153,7 @@ void refund(Account account, long amount) {
 
 ---
 
-## If I rebase first
+## If I Rebase First
 
 ![h:310](img/rebased-update.svg)
 
@@ -163,7 +163,7 @@ void refund(Account account, long amount) {
 
 ---
 
-## Pull request
+## Pull Request
 
 ![h:310](img/pr-merged.svg)
 
@@ -173,23 +173,23 @@ void refund(Account account, long amount) {
 
 ---
 
-## Two approaches
+## Two Approaches
 
-### Integrate first: test locally, then update `origin/master`
+### Integrate First: Test Locally, Then Update `origin/master`
 
 - Get up to date (merge or rebase), build, test
 - `origin/master` only receives what I tested: a fast-forward, or a merge
   commit that brings nothing new from upstream
 - If `origin/master` moved in the meantime: repeat
 
-### Integrate on the fly: update `origin/master` from an outdated branch
+### Integrate on the Fly: Update `origin/master` from an Outdated Branch
 
 - The merge happens on the fly, allowed whenever there is no git conflict
 - Faster, but a semantic conflict can break `master`
 
 ---
 
-## Ensuring `master` never breaks
+## Ensuring `master` Never Breaks
 
 - Goal: `master` always builds and passes the tests, so test what lands on it
 - Require branches to be up to date before merging
@@ -199,13 +199,13 @@ void refund(Account account, long amount) {
 
 ---
 
-# 3. History shapes
+# 3. History Shapes
 
 **What `git log --graph` looks like, depending on how the team integrates**
 
 ---
 
-## Circuit-board history
+## Circuit-Board History
 
 ![h:280](img/history-merge.svg)
 
@@ -217,7 +217,7 @@ Merge commits everywhere: catch-up merges into features, features into `master`
 
 ---
 
-## Linear history
+## Linear History
 
 ![](img/history-linear.svg)
 
@@ -230,7 +230,7 @@ Rebase (or squash) before every update, then fast-forward
 
 ---
 
-## Semi-linear history
+## Semi-Linear History
 
 ![](img/history-semi.svg)
 
@@ -244,13 +244,13 @@ Rebase each feature, then merge it with `--no-ff`
 
 ---
 
-# 4. Workflow examples on GitHub
+# 4. Workflow Examples on GitHub
 
 **The same choices, as repository settings**
 
 ---
 
-## GitHub: Update branch
+## GitHub: Update Branch
 
 ![h:310](img/gh-update-branch.svg)
 
@@ -260,7 +260,7 @@ Rebase each feature, then merge it with `--no-ff`
 
 ---
 
-## GitHub: normal merge
+## GitHub: Normal Merge
 
 ![](img/gh-merge.svg)
 
@@ -271,7 +271,7 @@ Rebase each feature, then merge it with `--no-ff`
 
 ---
 
-## GitHub: Squash and merge, Rebase and merge
+## GitHub: Squash and Merge, Rebase and Merge
 
 ![h:310](img/gh-squash-rebase.svg)
 
@@ -281,7 +281,7 @@ Rebase each feature, then merge it with `--no-ff`
 
 ---
 
-## GitHub: a longer-lived pull request
+## GitHub: A Longer-Lived Pull Request
 
 ![](img/gh-circuit.svg)
 
@@ -293,7 +293,7 @@ Rebase each feature, then merge it with `--no-ff`
 
 ---
 
-## GitHub: up to date and linear history
+## GitHub: Up to Date and Linear History
 
 ![h:310](img/gh-linear.svg)
 
@@ -303,7 +303,7 @@ Rebase each feature, then merge it with `--no-ff`
 
 ---
 
-## GitHub: merge queue
+## GitHub: Merge Queue
 
 ![h:310](img/gh-merge-queue.svg)
 
