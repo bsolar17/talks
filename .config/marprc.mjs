@@ -70,7 +70,9 @@ for (const slide of document.querySelectorAll('section')) {
   const room = slide.clientHeight - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom)
   // Height of the content, in slide pixels (the slide itself is scaled to the window)
   const used = () => {
-    const first = slide.firstElementChild, last = slide.lastElementChild
+    // Header and footer sit outside the content area
+    const content = [...slide.children].filter((e) => !e.matches('header, footer'))
+    const first = content[0], last = content.at(-1)
     if (!first) return 0
     const scale = slide.getBoundingClientRect().height / slide.offsetHeight
     return (last.getBoundingClientRect().bottom - first.getBoundingClientRect().top) / scale
@@ -109,6 +111,16 @@ const clickToAdvance = `
 </script>
 `
 
+// The author as the footer of the title slide, from the deck's front matter.
+// Marp itself only puts it in a <meta> tag.
+const escapeHtml = (text) =>
+  text.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
+const byline = (markdown) => {
+  const frontMatter = markdown.match(/^---\r?\n([\s\S]*?)\r?\n---/)?.[1] ?? ''
+  const author = frontMatter.match(/^author:\s*(.+)$/m)?.[1].trim()
+  return author ? `<footer>${escapeHtml(author)}</footer>\n` : ''
+}
+
 export default {
   // Without it, the language comes from the build machine's locale ("C" in CI)
   lang: 'en',
@@ -118,9 +130,10 @@ export default {
     // Newlines inside a paragraph are just source wrapping, not line breaks
     marp.markdown.set({ breaks: false })
     const render = marp.render.bind(marp)
-    marp.render = (...args) => {
-      const result = render(...args)
-      return { ...result, html: result.html + fitSlides + schemeToggle + clickToAdvance }
+    marp.render = (markdown, ...rest) => {
+      const result = render(markdown, ...rest)
+      const html = result.html.replace('</section>', byline(markdown) + '</section>')
+      return { ...result, html: html + fitSlides + schemeToggle + clickToAdvance }
     }
     return marp
   },

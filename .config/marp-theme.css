@@ -52,6 +52,17 @@ section strong {
   color: var(--peach);
 }
 
+/*
+ * Only the title slide has a footer (the author, from marprc.mjs): standard
+ * text, aligned with the slide content (the default theme's padding)
+ */
+section footer {
+  left: 78.5px;
+  bottom: 40px;
+  color: var(--text);
+  font-size: 1em;
+}
+
 section em {
   color: var(--teal);
 }

@@ -52,7 +52,9 @@ const isDark = (rgb) => rgb.match(/\d+/g).slice(0, 3).reduce((a, b) => a + +b, 0
         const style = getComputedStyle(s)
         const room = s.clientHeight - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom)
         const scale = s.getBoundingClientRect().height / s.offsetHeight
-        const first = s.firstElementChild, last = s.lastElementChild
+        // Header and footer sit outside the content area
+        const content = [...s.children].filter((e) => !e.matches('header, footer'))
+        const first = content[0], last = content.at(-1)
         if (!first) return 0
         const used = (last.getBoundingClientRect().bottom - first.getBoundingClientRect().top) / scale
         return Math.round(used - room)
