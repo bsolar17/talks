@@ -15,7 +15,7 @@ style: |
   }
 ---
 
-# git Help
+# git help
 
 **A short overview of git's main concepts**
 
