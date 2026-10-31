@@ -153,9 +153,6 @@ Praktiken    ➔  was wir täglich tun   (konkret, situationsabhängig)
 - **Respekt**: Alle tragen Wert bei; Entwickler und Kunden respektieren die
   Expertise des anderen; Teams sind für ihre Arbeit verantwortlich
 
-_Nach Don Wells,
-[extremeprogramming.org](http://www.extremeprogramming.org/values.html)_
-
 ---
 
 ## Prinzipien (Auswahl)

@@ -146,9 +146,6 @@ Practices    ➔  what we do daily    (concrete, situational)
 - **Respect**: everyone contributes value; developers and customers respect
   each other's expertise; teams own their work
 
-_Based on Don Wells,
-[extremeprogramming.org](http://www.extremeprogramming.org/values.html)_
-
 ---
 
 ## Principles (Selection)
