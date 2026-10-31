@@ -431,6 +431,12 @@ Often, what breaks or hurts shows you exactly what has to improve next!
 
 ---
 
+**Thank you!**
+
+> Questions? Remarks? Discussion welcome!
+
+---
+
 ## References
 
 - Kent Beck with Cynthia Andres, _Extreme Programming Explained: Embrace
@@ -453,9 +459,3 @@ Often, what breaks or hurts shows you exactly what has to improve next!
   <https://tidyfirst.substack.com/p/tidy-first-example>
 - "Great habits", from Fowler's _Refactoring_ (1999):
   <https://en.wikiquote.org/wiki/Kent_Beck>
-
----
-
-**Thank you!**
-
-> Questions? Remarks? Discussion welcome!

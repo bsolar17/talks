@@ -452,6 +452,12 @@ werden muss!
 
 ---
 
+**Vielen Dank!**
+
+> Fragen? Anmerkungen? Diskussion erwünscht!
+
+---
+
 ## Referenzen
 
 - Kent Beck mit Cynthia Andres, _Extreme Programming Explained: Embrace
@@ -474,9 +480,3 @@ werden muss!
   <https://tidyfirst.substack.com/p/tidy-first-example>
 - „Great habits“, aus Fowlers _Refactoring_ (1999):
   <https://en.wikiquote.org/wiki/Kent_Beck>
-
----
-
-**Vielen Dank!**
-
-> Fragen? Anmerkungen? Diskussion erwünscht!
