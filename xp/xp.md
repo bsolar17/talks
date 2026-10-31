@@ -275,13 +275,30 @@ big-bang release, hard to roll back
 - Not trivial: finding the steps is a **skill**, and the path is often longer
   - _"Make the change easy (warning: this may be hard), then make the easy
     change"_ (Kent Beck)
-  - **Parallel change**: expand ➔ migrate ➔ contract
-  - **Branch by abstraction**, **feature flags**: integrate unfinished work
-    without exposing it
-  - **Strangler fig**: a new component takes over a legacy one's capabilities
-    one by one, until the old one can be removed
+  - Proven patterns let **old and new coexist** while you move over
 
 If the gap is too large, build stepping stones
+
+---
+
+## Baby Steps: Old and New Side by Side
+
+Same shape: add the new next to the old ➔ move over step by step ➔ remove the
+old. What differs is **what** gets replaced and **where** the seam is
+
+| Pattern               | Replaces                           | Seam                                  |
+| --------------------- | ---------------------------------- | ------------------------------------- |
+| Parallel change       | An interface: method, API, schema  | Old and new versions, side by side    |
+| Branch by abstraction | An implementation used in the code | An abstraction in front of both       |
+| Strangler fig         | A whole system, from the outside   | A facade routing each capability      |
+
+- Parallel change is **small**: one interface, its callers migrate one by one
+- Branch by abstraction is **internal**: callers don't notice the swap
+- Strangler fig is **external**: the legacy system keeps running until nothing
+  is routed to it anymore
+
+**Feature flags** are orthogonal: they hide unfinished work and choose at
+runtime which side is active, in any of the three, with an instant way back
 
 ---
 

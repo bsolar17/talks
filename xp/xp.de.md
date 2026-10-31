@@ -289,13 +289,32 @@ riesiges Review, Big-Bang-Release, schwer rückgängig zu machen
   oft länger
   - _„Make the change easy (warning: this may be hard), then make the easy
     change“_ (Kent Beck)
-  - **Parallel Change**: erweitern ➔ migrieren ➔ zurückbauen
-  - **Branch by Abstraction**, **Feature Flags**: Unfertiges integrieren, ohne
-    es freizuschalten
-  - **Strangler Fig**: Eine neue Komponente übernimmt die Fähigkeiten einer
-    alten eine nach der anderen, bis die alte entfernt werden kann
+  - Bewährte Muster lassen **Altes und Neues koexistieren**, während man
+    umzieht
 
 Ist die Lücke zu gross, baut man Trittsteine
+
+---
+
+## Baby Steps: Altes und Neues nebeneinander
+
+Gleiche Form: Neues neben das Alte stellen ➔ schrittweise umziehen ➔ Altes
+entfernen. Unterschiedlich ist, **was** ersetzt wird und **wo** die Naht liegt
+
+| Muster                | Ersetzt                                  | Naht                                     |
+| --------------------- | ---------------------------------------- | ---------------------------------------- |
+| Parallel Change       | Eine Schnittstelle: Methode, API, Schema | Alte und neue Version nebeneinander      |
+| Branch by Abstraction | Eine Implementierung im Code             | Eine Abstraktion vor beiden              |
+| Strangler Fig         | Ein ganzes System, von aussen            | Eine Fassade leitet jede Fähigkeit um    |
+
+- Parallel Change ist **klein**: eine Schnittstelle, deren Aufrufer einer nach
+  dem anderen umziehen
+- Branch by Abstraction ist **intern**: Aufrufer merken den Austausch nicht
+- Strangler Fig ist **extern**: Das Altsystem läuft weiter, bis nichts mehr
+  dorthin geleitet wird
+
+**Feature Flags** sind orthogonal: Sie verbergen Unfertiges und wählen zur
+Laufzeit die aktive Seite, bei allen drei, mit sofortigem Weg zurück
 
 ---
 
