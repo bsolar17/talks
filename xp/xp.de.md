@@ -178,18 +178,14 @@ Praktiken    ➔  was wir täglich tun   (konkret, situationsabhängig)
   erfüllen
 - **Economics**: Jemand bezahlt dafür; ROI schaffen, Geschäftswert liefern
 - **Mutual Benefit**: Jede Tätigkeit sollte allen Beteiligten nützen / Win-win
-- **Self-Similarity**: Die Struktur einer Lösung auf anderen Ebenen
-  wiederverwenden. Passt nicht immer, aber bewährte Strukturen sind ein guter
-  Ausgangspunkt
+- **Self-Similarity**: Bewährte Strukturen auf anderen Ebenen wiederverwenden
 - **Improvement**: „Perfekt“ ist ein Verb, kein Adjektiv
 - **Flow**: Kontinuierlich liefern, nicht in grossen Brocken
 - **Redundancy**: Kritische Probleme oder Risiken verdienen mehrere
   Schutzmassnahmen
-- **Failure**: Wenn unklar ist, welcher Weg der beste ist, einen ausprobieren,
-  oder beide. Ist Ausprobieren unverhältnismässig teuer oder gefährlich: im
-  Kleinen versuchen / Risiko mindern
-- **Baby Steps**: Kleine Schritte sind billig zu machen und rückgängig zu
-  machen. Grosse Lücken mit Trittsteinen überbrücken.
+- **Failure**: Bester Weg unklar? Einen oder beide ausprobieren; zu riskant?
+  Im Kleinen
+- **Baby Steps**: Kleine Schritte sind billig, auch rückgängig zu machen
 - **Accepted Responsibility**: Verantwortung kann nicht zugewiesen, nur
   übernommen werden
 

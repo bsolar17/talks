@@ -167,16 +167,15 @@ Practices    ➔  what we do daily    (concrete, situational)
 - **Humanity**: software is built by people for people; meet their needs
 - **Economics**: someone is paying for this; create ROI, deliver business value
 - **Mutual Benefit**: every activity should benefit all parties / win-win
-- **Self-Similarity**: try reusing a solution's structure at other scales. It
-  won't always fit, but proven structures are a good starting point
+- **Self-Similarity**: reuse proven structures at other scales; they won't
+  always fit
 - **Improvement**: "perfect" is a verb, not an adjective
 - **Flow**: deliver continuously, not in big chunks
 - **Redundancy**: critical problems or risks deserve multiple defenses /
   safeguards
-- **Failure**: if you don't know which way is best, try one, or both. If trying
-  is prohibitively expensive or dangerous, scale down / mitigate
-- **Baby Steps**: small steps are cheap to take and to undo. Bridge large gaps
-  with stepping stones.
+- **Failure**: unsure which way is best? Try one, or both; too risky? Try it
+  small
+- **Baby Steps**: small steps are cheap to take and to undo
 - **Accepted Responsibility**: responsibility can't be assigned, only accepted
 
 ---
