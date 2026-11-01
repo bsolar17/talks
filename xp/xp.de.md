@@ -359,10 +359,8 @@ Laufzeit die aktive Seite, bei allen drei, mit sofortigem Weg zurück
   Outsourcing der Entwicklung, ohne auch die Verantwortung auszulagern
 - **Regulierte Umfelder**: Audits und Compliance können Prozesse, Dokumentation
   oder Design im Voraus verlangen, die XP bewusst zu minimieren versucht
-- **Pair Programming**: gilt als teuer, kann anstrengend sein, passt nicht in
-  jede Situation
-- **Evolutionäres Design**: Ohne ständige Refactoring-Disziplin kann die
-  Architektur verwildern
+- **Anspruchsvolle Praktiken**: Pairing gilt als teuer und kann anstrengend
+  sein; ohne ständige Refactoring-Disziplin verwildert die Architektur
 - **Gefahr des Dogmatismus**: „Extrem“ kann zur Orthodoxie erstarren, aber XP
   ist im Kern pragmatisch: Die Praktiken dienen den Werten und passen sich dem
   Kontext an
@@ -385,27 +383,10 @@ XP ist keine Wunderwaffe: Wisse, was du bei einem Kompromiss aufgibst, und warum
 
 - Ihre Gründer haben 2001 alle das Agile Manifest unterzeichnet: Beck, Schwaber,
   Sutherland
-
----
-
-## XP und Scrum: Gegenseitiger Einfluss
-
-Scrum ➔ XP
-
-- **Daily Stand-up**: Copliens Pattern (1993) ➔ Daily Scrum ➔ XP-Kernpraktik
-  (1998); XP-Teams übernahmen später Scrums drei Fragen
-- 1995: Kent Beck bat Jeff Sutherland um die Scrum-Papers, als er XP
-  ausarbeitete; laut Sutherland sollte XP die Engineering-Praktiken übernehmen,
-  Scrum das Teammanagement
-
-XP ➔ Scrum
-
-- Das frühe Scrum wurde als Hülle um XP präsentiert: _XP@Scrum_ (Schwaber),
-  _XBreed_ (Beedle), das erste Scrum-Buch (2001)
-- **User Stories**, **Velocity**, **Planning Poker**: XP-Ideen, heute
-  alltägliches Scrum-Vokabular
-- Der Kurs **Certified Scrum Developer** lehrt die Engineering-Praktiken von XP:
-  TDD, Pairing, Refactoring, CI
+- Gegenseitig entlehnt: Das **Daily Stand-up** kam über Scrum zu XP; **User
+  Stories**, **Velocity**, **Planning Poker** gingen von XP zu Scrum
+- Das frühe Scrum wurde als Hülle um XP präsentiert (_XP@Scrum_); der Kurs
+  **Certified Scrum Developer** lehrt die Engineering-Praktiken von XP
 
 ---
 
@@ -506,8 +487,6 @@ werden muss!
 - Chrysler C3:
   <https://en.wikipedia.org/wiki/Chrysler_Comprehensive_Compensation_System>
 - Daily Stand-up: <https://agilealliance.org/glossary/daily-meeting/>
-- Jeff Sutherland, _Origins of Scrum_ (2007):
-  <http://jeffsutherland.com/scrum/2007/07/origins-of-scrum.html>
 - XP@Scrum, XBreed:
   <https://www.computerworld.com/article/1363906/xp-scrum-join-forces.html>
 - Kent Beck, _Tidy First? Example_ („make the change easy“):

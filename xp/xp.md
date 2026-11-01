@@ -338,10 +338,8 @@ runtime which side is active, in any of the three, with an instant way back
   outsourcing development without also outsourcing ownership
 - **Regulated environments**: audits and compliance may require processes,
   documentation or up-front design XP deliberately tries to minimize
-- **Pair programming**: perceived as costly, can be exhausting, not for every
-  situation
-- **Evolutionary design**: without constant refactoring discipline, architecture
-  can drift
+- **Demanding practices**: pairing is perceived as costly and can be
+  exhausting; without constant refactoring discipline, architecture drifts
 - **Dogmatism risk**: "extreme" can harden into orthodoxy, but XP is
   fundamentally pragmatic: practices serve the values and adapt to context
 - Even the **C3 project** was cancelled in 2000: it went live in 1997 paying
@@ -363,27 +361,10 @@ XP is not a silver bullet: know what you give up when you compromise, and why
 
 - Their founders all signed the Agile Manifesto in 2001: Beck, Schwaber,
   Sutherland
-
----
-
-## XP and Scrum: Mutual Influence
-
-Scrum ➔ XP
-
-- **Daily stand-up**: Coplien's pattern (1993) ➔ Scrum's daily scrum ➔ XP
-  core practice (1998); XP teams later adopted Scrum's three questions
-- 1995: Kent Beck asked Jeff Sutherland for Scrum's papers while shaping XP;
-  according to Sutherland, XP would take the engineering practices and Scrum
-  the team management
-
-XP ➔ Scrum
-
-- Early Scrum was pitched as a wrapper around XP: _XP@Scrum_ (Schwaber),
-  _XBreed_ (Beedle), the first Scrum book (2001)
-- **User stories**, **velocity**, **planning poker**: XP ideas, now everyday
-  Scrum vocabulary
-- The **Certified Scrum Developer** course teaches XP's engineering practices:
-  TDD, pairing, refactoring, CI
+- Borrowed both ways: the **daily stand-up** came to XP via Scrum; **user
+  stories**, **velocity**, **planning poker** went from XP to Scrum
+- Early Scrum was pitched as a wrapper around XP (_XP@Scrum_); the **Certified
+  Scrum Developer** course teaches XP's engineering practices
 
 ---
 
@@ -480,8 +461,6 @@ Often, what breaks or hurts shows you exactly what has to improve next!
 - Chrysler C3:
   <https://en.wikipedia.org/wiki/Chrysler_Comprehensive_Compensation_System>
 - Daily stand-up: <https://agilealliance.org/glossary/daily-meeting/>
-- Jeff Sutherland, _Origins of Scrum_ (2007):
-  <http://jeffsutherland.com/scrum/2007/07/origins-of-scrum.html>
 - XP@Scrum, XBreed:
   <https://www.computerworld.com/article/1363906/xp-scrum-join-forces.html>
 - Kent Beck, _Tidy First? Example_ ("make the change easy"):
