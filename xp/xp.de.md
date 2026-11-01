@@ -45,6 +45,23 @@ lang: de-CH
 
 ---
 
+## Embrace Change: Die Prämisse
+
+_„You will figure out what you're building as you build it“_ (Jack Rusher)
+
+- Programmieren ist eine **Design**-Tätigkeit: Die Spezifikation ist immer
+  unvollständig, die einzige vollständige Spezifikation ist der Quellcode
+- Auch eine korrekte Spezifikation veraltet: Das Geschäft und die Welt ändern
+  sich ständig
+- Wasserfall: Änderungen sind teuer ➔ sie **verhindern**
+- XP: Änderungen sind unvermeidlich ➔ sie **billig** halten und **schnell
+  lernen**
+
+Agiles Manifest: _„Reagieren auf Veränderung mehr als das Befolgen eines
+Plans“_
+
+---
+
 ## Die Wirkung von XP
 
 Praktiken, die XP erfunden oder zum Mainstream gemacht hat:
@@ -192,6 +209,24 @@ Praktiken    ➔  was wir täglich tun   (konkret, situationsabhängig)
   Daily Deployment, Root-Cause Analysis...
 - Mit denen beginnen, die den grössten Schmerz adressieren, aber den vollen
   Nutzen erst erwarten, wenn auch die unterstützenden Praktiken etabliert sind
+
+---
+
+## Von Werten zu Praktiken: Warum kurze Zyklen?
+
+Wenn man beim Bauen lernt, was man baut, ist jeder Zyklus eine Chance zu lernen
+
+- **Feedback**: Je früher man es weiss, desto früher kann man sich anpassen
+- **Economics**: Früher gelieferter Wert bringt früher Ertrag; später
+  getroffene Entscheidungen beruhen auf mehr Wissen
+- **Baby Steps, Failure**: Eine falsche Woche kostet eine Woche, nicht ein Jahr
+- **Mut**: Kleine Wetten machen es sicher, die Wahrheit zu sagen und neu zu
+  planen
+- **Self-Similarity**: Dieselbe Schleife auf jeder Ebene, von TDD bis zum
+  Quartal
+
+➔ **Weekly Cycle**, **Daily Deployment**, **CI**: nur bezahlbar, weil Tests
+und Refactoring Änderungen billig halten
 
 ---
 
@@ -459,6 +494,8 @@ werden muss!
 
 - Kent Beck mit Cynthia Andres, _Extreme Programming Explained: Embrace
   Change_, 2. Auflage (2004)
+- Jack Rusher, _Stop Writing Dead Programs_, Strange Loop (2022):
+  <https://www.youtube.com/watch?v=8Ab3ArE8W3s>
 - Don Wells, XP-Werte: <http://www.extremeprogramming.org/values.html>
 - Manifest für Agile Softwareentwicklung: <https://agilemanifesto.org/>
 - The Scrum Guide: <https://scrumguides.org/scrum-guide.html>

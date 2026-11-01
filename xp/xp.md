@@ -42,6 +42,20 @@ date: 2026-09-26
 
 ---
 
+## Embrace Change: The Premise
+
+_"You will figure out what you're building as you build it"_ (Jack Rusher)
+
+- Programming is a **design** activity: the spec is always incomplete, the
+  only complete spec is the source code
+- Even a correct spec goes stale: the business and the world keep changing
+- Waterfall: change is expensive ➔ **prevent** it
+- XP: change is inevitable ➔ keep it **cheap**, and **learn fast**
+
+Agile Manifesto: _"Responding to change over following a plan"_
+
+---
+
 ## The Impact of XP
 
 Practices XP invented or made mainstream:
@@ -181,6 +195,22 @@ Practices    ➔  what we do daily    (concrete, situational)
   root-cause analysis...
 - Start with the ones that address your biggest pain, but expect the full
   payoff only once the supporting practices are in place
+
+---
+
+## From Values to Practices: Why Short Cycles?
+
+If you learn what to build by building it, every cycle is a chance to learn
+
+- **Feedback**: the sooner you know, the sooner you can adapt
+- **Economics**: value shipped sooner earns sooner; decisions made later are
+  made with more knowledge
+- **Baby Steps, Failure**: a wrong week costs a week, not a year
+- **Courage**: small bets make it safe to tell the truth and re-plan
+- **Self-Similarity**: the same loop at every scale, from TDD to quarters
+
+➔ **Weekly Cycle**, **Daily Deployment**, **CI**: affordable only because
+tests and refactoring keep change cheap
 
 ---
 
@@ -438,6 +468,8 @@ Often, what breaks or hurts shows you exactly what has to improve next!
 
 - Kent Beck with Cynthia Andres, _Extreme Programming Explained: Embrace
   Change_, 2nd edition (2004)
+- Jack Rusher, _Stop Writing Dead Programs_, Strange Loop (2022):
+  <https://www.youtube.com/watch?v=8Ab3ArE8W3s>
 - Don Wells, XP values: <http://www.extremeprogramming.org/values.html>
 - Manifesto for Agile Software Development: <https://agilemanifesto.org/>
 - The Scrum Guide: <https://scrumguides.org/scrum-guide.html>
